@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow"/><!--This meta allows to the browser show this page as a recommendation on the web -->
+    <title>Robot Vacuum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Link to the Font Awesome library for access to a wide range of icons. -->
+
+</head>
+<body>
+    <header>
+        <div class="logo">RobotVac</div>
+        <nav>
+            <ul><!--Unorder list for the bar menu on the top-->
+                <li><a href="index.html">Home |</a></li>
+                <li><a href="#about-us">About |</a></li>
+                <li><a href="#product-id">Product |</a></li>
+                <li><a href="#contact-email">Contact |</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="video" ><!--First video with controls added, autoplay but with no audio-->
+        <video controls preload="auto" autoplay loop muted class="video-responsive">
+            <source src="Introducing Dreame X30 Ultra Robot Vacuum and Mop.mp4"/>
+        </video>
+    </section>
+    <main>
+            <div class="icon-bar"> <!--Icon mop self-->
+                <div class="icon-item">
+                <img src="Mop_Self_Cleaning.svg" alt="Mop Self Cleaning">
+                <p>Mop Self Cleaning</p>
+                </div>
+                <div class="icon-item"><!--Icon omni self maintenance-->
+                <img src="Omni-self_Maintainance.svg" alt="Omni-self Maintainance">
+                <p>Omni-self Maintainance</p>
+                </div>
+            </div>
+        </div>
+        <section class="video" id="product-id">
+            <video controls preload="auto" autoplay loop muted class="video-responsive">
+                <source src="Dreame X30 Ultra _ Clean Beyond Your Reach.mp4"/>
+            </video>
+        </section>
+        <section class="specs-section">
+            <ol class="centered-specs"><!--Ordered list-->
+                <h2 class="prod-h2">Product Specifications</h2> <!-- A heading for the section -->
+                <li>Auto Maintenance Keeps Your Hands-Free: The vacuum can empty its dustbin, refill water for mopping, and wash its mop and the washboard, ensuring continuous freshness and saving you time on cleaning.</li>
+                <li>MopExtend RoboSwing Technology to Glide Under Low Furniture: With our latest tech upgrade, it's easy to handle mess along edges, deep in corners, and reach under your low-profile sofa as far as 1.57 inches.</li>
+                <li>Mop Rewashing and Floor Remopping to Handle Stubborn Dirt: Smart dirt detection, mop rewashing, and floor remopping are here to scrub sticky dirt from floors twice, ensuring your mess-free home.</li>
+                <li>8,300Pa Suction Power to Pick Up Heavy Mess: Get your carpet or hard floor a powerful sweep, as easy as lifting an 11 pound item. Strong suction leaves no room for hair, dirt, and various debris particles.</li>
+                <li>Personalized Cleaning for Your Carpet: Tired of frequent carpet cleaning? With a removable and liftable mop, you can select a strategy for low-to high-pile carpets, ensuring they stay dry and clean.</li>
+                <li>Auto-Cleaning Station Base: The washboard can be cleaned together with the mop washing, reducing stain residue and manual cleaning frequency.</li>
+                <li>Smart Recognition & Obstacle Avoidance: With the help of AI Action and 3D Structured Light, our home expert identifies and avoids up to 70+ types of objects like shoes, cables, and others. With a built-in LED, your robot identifies obstacles and cleans efficiently in dim spaces and dark rooms.</li>
+                <li>Experience detailed cleaning with top-notch features. Only supports 2.4G WiFi.</li>
+            </ol>
+            </section>
+        <section class="video" id="about-us">
+            <video controls preload="auto" autoplay loop muted class="video-responsive">
+                <source src="Dreame Smart Factory Introduction.mp4"/>
+            </video>
+        </section>
+        <section class="hero">
+            <h1>Experience the Future of Cleaning</h1>
+            <p>Our Robot Vacuum revolutionizes the way you clean. No effort, just clean.</p>
+            <a href="https://www.dreametech.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSFRYVEhURUI4ODdCNTI3NEdWRkpFOFpZ?_ga=2.123967823.431183657.1712545102-1986916731.1710186191" class="cta-button">Shop Now</a><!--External link to re-direct to another page-->
+        </section>
+        <section class="social-media-buttons">
+            <a href="https://www.facebook.com/dreametechnology/" target="_blank" class="social-btn"><!--Facebook button-->
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/DreameGlobal" target="_blank" class="social-btn"> <!--Twitter button-->
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </section>
+    </main>
+    <div class="email-submission" id="contact-email"> <!--Email button-->
+        <input type="email" placeholder="Email" id="email-input" name="email"/>
+        <button type="submit" id="submit-btn">SUBMIT</button>
+    </div>
+    <footer><!--Footer with my text-->
+        <p>RobotVac CSS Final Project Made by Omar Serrano & Michelle Barajas</p>
+    </footer>
+    <a href="#top" class="go-top">&#9650;</a><!-- This is a 'back to top' button, styled as an upward-pointing arrow, that when clicked, takes the user to the top of the page. -->
+</body>
+</html>

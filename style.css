@@ -1,0 +1,227 @@
+* {  /*Universal Selector*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /*Body styles*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    
+}
+
+header { /*Header styles*/
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    
+    
+}
+
+header .logo { /*Logo styles */
+    color: #fff;
+    font-size: 24px;
+}
+
+.video {
+    width: 100%; /* Makes the video container as wide as possible */
+    display: flex; /* Flexbox center the content */
+    justify-content: center; /* Center the video horizontally */
+    align-items: center; /* Center the video vertically */
+}
+
+.video-responsive {
+    width: 100%; /* Make the video as wide as the container */
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0; /* Removes padding from the <ul>, aligning it to the edge of its container. */
+}
+nav ul li {
+    display: inline; /* Displays list items in a horizontal row instead of the default vertical. */
+    margin-left: 10px; /* Adds space to the left of each list item, separating them. */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes the underline from links. */
+    color: white; /* Sets the text color of the links to white. */
+    background-color: rgb(31, 9, 9); /* Sets the background color of the links. */
+    border-radius: 2px; /* Rounds the corners of the link elements. */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font of the links. */
+}
+
+.icon-bar {
+    display: flex; /* Applies a flexbox layout to the container, enabling flexible layouts and alignment. */
+    justify-content: space-around; /* Distributes space around items within the container evenly. */
+    padding-top: 10px; /* Adds space above the icon bar. */
+    padding-bottom: 10px;
+}
+
+.icon-item img {
+    width: 50px; /* Sets the width of the images to 50 pixels, controlling the size of icons. */
+    height: auto; /* Sets the height to auto, preserving the aspect ratio of the icons. */
+}
+
+.icon-item p {
+    color: black; /* Sets the text color of the paragraph to black. */
+    text-align: center; /* Aligns the text within the paragraph to the center. */
+}
+/* Styles for the ordered list with the class 'centered-specs' */
+.centered-specs {
+    color: #fff;
+    list-style-position: inside; /* Positions the list item numbers inside, aligning them with the text for centering */
+    text-align: justify; /* Centers the text of the list items */
+    padding: 10px; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    margin-top: 0px;
+    background-color: rgb(36, 34, 34);
+}
+.prod-h2 {
+    padding-bottom: 20px;
+}
+
+.centered-specs li {
+    margin-bottom: 20px; /* Adds space between each specification for better readability */
+}
+
+
+
+/* Targets elements with the class .hero */
+.hero {
+    text-align: center; /* Centers the text inside the hero section. */
+    padding: 50px 20px; /* Adds padding: 50px on the top and bottom, 20px on the left and right. */
+    padding-top: 20px;
+}
+
+/* Targets elements with the class .cta-button */
+.cta-button {
+    display: inline-block; /* Allows the element to be inline but also to have padding and other block-level properties. */
+    padding: 10px 50px; /* Adds padding inside the button for top/bottom and left/right respectively. */
+    background-color: #007bff; /* Sets the background color of the button to a blue shade. */
+    color: #fff; /* Sets the text color inside the button to white. */
+    text-decoration: none; /* Removes any underline from text, common for anchor elements styled as buttons. */
+    border-radius: 5px; /* Rounds the corners of the button for a smoother appearance. */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Changes the cursor to a pointer on hover to indicate it's clickable */
+}
+.cta-button:hover {
+    background-color: #1729cd;/*change the icons color when we point with the pointer*/
+}
+/* Targets elements with the class .social-media-buttons */
+.social-media-buttons {
+    display: flex; /* Applies a flexbox layout, enabling a flexible and responsive container. */
+    justify-content: center; /* Centers the flex items (buttons) horizontally within the container. */
+    gap: 20px; /* Creates space between each flex item (button), making them not touch each other. */
+    padding-bottom: 10px;
+}
+
+
+.social-btn {
+    /* Styles for individual buttons */
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+    border-radius: 50%; /* This will give the buttons a circular shape */
+    text-decoration: none; /*Remove underlining from text */
+    transition: background-color 0.3s; /*A smooth effect when changing background color */
+}
+
+.social-btn i {
+    /* Styles for icons inside buttons */
+    font-size: 24px;
+}
+
+.social-btn:hover {
+    background-color: #1729cd; /*change the icons color when we point with the pointer*/
+}
+
+.email-submission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Dark bar background */
+    padding: 5px; /* Space around input and button */
+}
+
+#email-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 5px; /* Space around input and button */
+    border: none;
+    color: #ccc; /* Text color iniside the input */
+    background-color: #555; /* Input background */
+    border-radius: 5px; /* Rounded input edges */
+}
+#submit-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #bfa67a; /* button color */
+    color: white; /* Button Text Color */
+    border-radius: 5px; /* Rounded button edges */
+    cursor: pointer; /* Changes the cursor to a hand when hovering over the button */
+}
+#email-input::placeholder {
+    color: #ccc; /* Placeholder text color */
+}
+#submit-btn:hover {
+    background-color: #a89068; /* button color on hover */
+}
+
+footer { /*Footer syle*/
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+@keyframes colorCycle { /*is a CSS rule used to create animations*/
+    0%, 100% { color: #ffffff; } /* Start and end with white */
+    25% { color: #ff0000; } /* Red at 25% */
+    50% { color: #a89068; } /* Gold at 50% */
+    75% { color: #0000ff; } /* Blue at 75% */
+  }
+  
+  footer p {
+    animation: colorCycle 10s infinite; /* Apply the animation, which lasts for 10 seconds and repeats indefinitely */
+  }
+  
+/* Styles for the 'back to top' arrow button */
+.go-top {
+    position: fixed; /* Keeps the arrow button fixed on the screen, regardless of scrolling */
+    bottom: 10px; /* Positions the arrow button 20 pixels from the bottom of the viewport */
+    right: 0px; /* Positions the arrow button 30 pixels from the right side of the viewport */
+    display: block; /* Ensures the link is a block-level element so it can have width and height */
+    width: 50px; /* Sets the width of the arrow button */
+    height: 50px; /* Sets the height of the arrow button */
+    text-align: center; /* Centers the arrow icon horizontally within the button */
+    line-height: 50px; /* Centers the arrow icon vertically within the button */
+    background: #000; /* Sets the background color of the arrow button to black */
+    color: #fff; /* Sets the color of the arrow icon to white */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate the button is clickable */
+    border-radius: 5px; /* Rounds the corners of the arrow button for a smoother look */
+    text-decoration: none; /* Removes any underline from the link for a cleaner appearance */
+    font-size: 24px; /* Sets the size of the arrow icon */
+    z-index: 1000; /* Ensures the arrow button is layered above other page elements */
+}
+/* Defining flicker animation */
+@keyframes blink { /*is a CSS rule used to create animations*/
+    0%, 100% { opacity: 1; } /* Full opacity */
+    50% { opacity: 0; } /* Full transparency */
+}
+  /* Apply the animation to the upload button */
+.go-top {
+    animation: blink 2s linear infinite; /* Applies the animation, which will last 2 seconds and repeat indefinitely*/
+}
+
+
+
+
+
+
